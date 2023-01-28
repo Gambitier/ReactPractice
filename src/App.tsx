@@ -18,8 +18,6 @@ function App() {
 		if (e.target.name == 'email') {
 			console.log(e.target.value);
 			setLogin((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-		} else {
-			// alert('Please enter valid email');
 		}
 		if (e.target.name == 'password' && e.target.value !== '') {
 			setLogin((prev) => ({ ...prev, [e.target.name]: e.target.value }));
